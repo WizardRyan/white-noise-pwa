@@ -1,6 +1,6 @@
 const CACHE_NAME = 'noise-app-v1.1';
 
-const G_URL = "/wizardryan.github.io/white-noise-pwa/";
+const G_URL = "/white-noise-pwa";
 
 const urlsToCache = [
     `${G_URL}/`,
