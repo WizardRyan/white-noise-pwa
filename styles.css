@@ -36,6 +36,7 @@ body{
 
 button:hover{
     cursor: pointer;
+    filter: brightness(1.4);
 }
 
 .button-active{
@@ -48,12 +49,21 @@ button:hover{
     margin: 10px 0 10px 0;
 }
 
+button{
+    width: 120px;
+}
+
+.button-row{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
 
 #controls{
     display: flex;
     flex-direction: column;
 }
 
-button{
-
+.slider{
+    accent-color: red;
 }

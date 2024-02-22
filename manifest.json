@@ -1,5 +1,5 @@
 {
-    "name": "Noise Generator PWA",
+    "name": "Noise Generator",
     "short_name": "Noise Gen",
     "start_url": "/index.html",
     "display": "standalone",

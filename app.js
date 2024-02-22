@@ -54,6 +54,7 @@ function adjustGain(type, e){
 function playNoise(type) {
     if (noiseInstances[type]) {
         stopNoise(type);
+        document.getElementById(`${type}Bttn`).className = "button-inactive";
         return; 
     }
 
@@ -77,7 +78,9 @@ function playNoise(type) {
     audioSource.connect(gainNode);
     audioSource.connect(audioContext.destination);
     gainNode.connect(audioContext.destination); 
+    audioSource.loop = true;
     audioSource.start();
+    document.getElementById(`${type}Bttn`).className = "button-active";
 
     noiseInstances[type] = { audioSource, gainNode }; 
 }
