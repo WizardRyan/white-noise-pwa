@@ -60,6 +60,7 @@ function playNoise(type) {
 
     const audioSource = audioContext.createBufferSource();
     const gainNode = audioContext.createGain();
+    gainNode.gain.setValueAtTime(document.getElementById(`${type}Gain`).value, audioContext.currentTime);
 
     let noiseBuffer;
     switch (type) {
