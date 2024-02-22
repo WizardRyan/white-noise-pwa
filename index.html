@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noise Generator PWA</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="manifest" href="/manifest.json">
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <div id="controls">
+            <div class="button-row">
+                <button id="whiteBttn" onclick="playNoise('white')">White Noise</button>
+                <input type="range" min="-1" max="1" step="0.01" id="whiteGain">
+            </div>
+            <div class="button-row">
+                <button id="pinkBttn" onclick="playNoise('pink')">Pink Noise</button>
+                <input type="range" min="-1" max="1" step="0.01" id="pinkGain">
+            </div>
+            <div class="button-row">
+                <button id="brwnBttn" onclick="playNoise('brown')">Brown Noise</button>
+                <input type="range" min="-1" max="1" step="0.01" id="brownGain">
+            </div>
+        </div>
+    </body>
+</html>
