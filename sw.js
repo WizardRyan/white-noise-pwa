@@ -1,9 +1,12 @@
 const CACHE_NAME = 'noise-app-v1.1';
 
+const G_URL = "/wizardryan.github.io/white-noise-pwa/";
+
 const urlsToCache = [
-    '/',
-    'app.js',
-    'style.css', 
+    `${G_URL}/`,
+    `${G_URL}/index.html`,
+    `${G_URL}/style.css`,
+    `${G_URL}/app.js`,
 ];
 
 self.addEventListener('install', event => {

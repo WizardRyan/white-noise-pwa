@@ -1,7 +1,8 @@
 {
     "name": "Noise Generator",
     "short_name": "Noise Gen",
-    "start_url": "/index.html",
+    "scope": "/wizardryan.github.io/white-noise-pwa/",
+    "start_url": "/wizardryan.github.io/white-noise-pwa/",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#353535",
